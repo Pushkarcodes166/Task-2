@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pushkar's Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stopwatch-wrapper">
+    <h2>⏱️ Stopwatch</h2>
+    <div id="timeDisplay">00:00:00</div>
+    <div class="control-buttons">
+      <button onclick="handleStart()">Start</button>
+      <button onclick="handlePause()">Pause</button>
+      <button onclick="handleReset()">Reset</button>
+      <button onclick="recordLap()">Lap</button>
+    </div>
+    <section class="laps-section">
+      <h4>Laps</h4>
+      <ul id="lapList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
